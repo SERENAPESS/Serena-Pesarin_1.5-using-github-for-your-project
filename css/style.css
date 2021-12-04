@@ -23,11 +23,11 @@ body {
 
     body {
         background-color: #ffffff;
-        font-family: 'Lato', sans-serif;
-        font-size: 16px; /* Sets the font size to 16px */
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px; /* Sets the font size to 18px */
         font-weight: 300; /* Sets the font weight to 300 */
         line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-        color: #4a4a4a;
+        color: #3E3C3C;
       }
       
       h1, h2, h3, h4 {
@@ -35,19 +35,19 @@ body {
       }
       h1 {
         font-size: 2.75em;
-        font-weight: 700;
+        font-weight: 600;
       }
       
       h2 {
         font-size: 2.25em;
-        font-weight: 700;
+        font-weight: 600;
       }
       
       h3 {
         font-size: 1.75em;
-        font-weight: 400;
+        font-weight: 300;
       }
       h4 {
         font-size: 1.35em;
-        font-weight: 400;
+        font-weight: 200;
       }
