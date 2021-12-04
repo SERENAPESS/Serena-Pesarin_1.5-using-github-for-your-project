@@ -94,7 +94,7 @@ body {
 .button.contact {
     background-color: transparent;
     color: #f66C26;
-    text-transform: lowercase;
+    text-transform: uppercase;
     border: 2px solid #f66C26;
   }
 
