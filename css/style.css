@@ -25,9 +25,9 @@ body {
     body {
         background-color: #ffffff;
         font-family: 'Montserrat', sans-serif;
-        font-size: 16px; /* Sets the font size to 16px */
-        font-weight: 300; /* Sets the font weight to 300 */
-        line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+        font-size: 16px; 
+        font-weight: 300; 
+        line-height: 1.6; 
         color: #3E3C3C;
       }
       
@@ -62,17 +62,41 @@ body {
         text-decoration: underline; /* Underlining when hovering over a link */
 
       }
-      a:active { /* selected link */
+      a:active { 
   color: #F66C26;
 }
 
 .button {
     display: inline-block; 
     background-color: #F66C26;
-    color: #ffffff; /* needed to override the default link color */
+    color: #ffffff; 
     font-weight: 600;
     padding: 0px;
-    border-radius: 3px;
-    border-bottom: 1px solid #994c30; /* width of the border, type, color */
+    border-radius: 1px;
+    border-bottom: 1px solid #F66C26;
+    ; 
     transition: 0.2s opacity;
+  }
+  .button:hover {
+    border-radius: 1px;
+    border-bottom: 1px solid #F66C26; 
+    transition: 0.2s opacity;
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+  }
+
+.button:active { /* selected link */
+  color: #9F66C26;
+}
+
+.button.contact {
+    background-color: transparent;
+    color: #f66C26;
+    text-transform: lowercase;
+    border: 2px solid #f66C26;
+  }
+
+  .button.contact:hover {
+    background-color: #f66C26;
+    color: #ffffff;
   }
