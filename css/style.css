@@ -3,6 +3,7 @@ Colors used:
 Primary Color (Isabelline.): #F4F4ED;
 Secondary Color (Anti-Flash White): #F2F2F2;
 Terziary Color (Bright Gray): #ECECEC;
+Hints (Spanish Gray) : #979797
 Button Color (Vivid Tangelo): #F66C26
 Font Color (Black Olive) : #3E3C3C
 */
@@ -51,3 +52,16 @@ body {
         font-size: 1.35em;
         font-weight: 200;
       }
+
+      a {
+        color: #3E3C3C;
+        text-decoration: none; /* No underlining */
+      }
+      a:hover {
+        color: #F66C26;
+        text-decoration: underline; /* Underlining when hovering over a link */
+
+      }
+      a:active { /* selected link */
+  color: #F66C26;
+}
