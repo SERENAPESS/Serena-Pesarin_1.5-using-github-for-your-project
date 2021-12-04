@@ -70,8 +70,8 @@ body {
     display: inline-block; 
     background-color: #F66C26;
     color: #ffffff; 
-    font-weight: 600;
-    padding: 0px;
+    font-weight: 300;
+    padding: 10px;
     border-radius: 1px;
     border-bottom: 1px solid #F66C26;
     ; 
@@ -79,7 +79,9 @@ body {
   }
   .button:hover {
     border-radius: 1px;
-    border-bottom: 1px solid #F66C26; 
+    background-color: #d46933;
+    color: #ffffff;
+    border-bottom: 1px solid #d46933; 
     transition: 0.2s opacity;
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
     text-decoration: none;
