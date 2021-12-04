@@ -88,7 +88,7 @@ body {
   }
 
 .button:active { /* selected link */
-  color: #9F66C26;
+  color: #F66C26;
 }
 
 .button.contact {
