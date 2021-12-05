@@ -16,6 +16,14 @@ Terziary Color (Bright Gray): #ECECEC;
 Button Color (Vivid Tangelo): #F66C26
 Font Color (Black Olive) : #3E3C3C
 */
+
+header {
+  background-color: #ff44c4;
+  background-color: #ff44c4;
+  padding: 10px;
+}
+
+
 body {
     background-color:#F4F4ED;
 }
