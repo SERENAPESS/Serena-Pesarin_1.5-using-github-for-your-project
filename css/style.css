@@ -165,4 +165,19 @@ nav > ul > li > a {
   text-align: left;
 }
 
-
+/* footer styling */
+#contact h2 {
+  text-align: center;
+}
+#contact p {
+  text-align: center;
+}
+#work h2 {
+  text-align: center;
+}
+footer p {
+  margin-bottom: 10px;
+}
+.centerMe {
+  text-align: center;
+}
