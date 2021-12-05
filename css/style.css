@@ -19,9 +19,15 @@ Font Color (Black Olive) : #3E3C3C
 * {
   box-sizing: border-box;
 }
+header {
+  background-color: #F4F4ED;
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px;
+}
 
 body {
-    background-color: #F4F4ED;
+    background-color: #fc1ba6;
 }
 body {
     font-family: 'Montserrat', sans-serif;  }
