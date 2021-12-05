@@ -18,9 +18,14 @@ Font Color (Black Olive) : #3E3C3C
 */
 
 header {
-  background-color: #ff44c4;
-  background-color: #ff44c4;
-  padding: 10px;
+  background-color: #F4F4ED;
+  background-color: #F4F4ED;
+  padding-top: 10px;
+padding-right: 5px;
+padding-bottom: 15px;
+padding-left: 5px;
+  margin: 10px;
+
 }
 
 
