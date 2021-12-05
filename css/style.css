@@ -60,9 +60,7 @@ img {
         color: #3E3C3C;
         text-decoration: none; /* No underlining */
       }
-      a:visited {
-        color: #3E3C3C;
-      }
+   
       a:hover {
         color: #F66C26;
         text-decoration: underline; /* Underlining when hovering over a link */
@@ -86,7 +84,7 @@ img {
       opacity: 0.8;
       text-decoration: none;
   }
-.button:active { /* selected link */
+.button:active { 
   color: #F66C26;
 }
 .button.contact {
@@ -144,12 +142,27 @@ nav > ul > li > a {
   font-weight: 300;
   color: #3E3C3C;
 }
+/* hero styling*/
 #hero {
-  background-color: #ffe4c4;
+  background-color: #F4F4ED;
   padding: 10px 0;
   display: inline-block;
   width: 100%;
 }
-
+#hero h1 {
+  text-align: left;
+  margin: 0;
+}
+#hero h2 {
+  text-align: left;
+  margin: 15px 0;
+}
+#hero h3 {
+  text-align: center;
+  margin: 15px 0;
+} 
+#hero p {
+  text-align: left;
+}
 
 
