@@ -98,6 +98,7 @@ body {
 .button.contact {
     background-color: transparent;
     color: #f66C26;
+    padding: 10px;
     text-transform: uppercase;
     border: 2px solid #f66C26;
   }
@@ -109,4 +110,20 @@ body {
 /* Layout styling */
 .container {
   padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+.logo {
+  max-width: 250px;
+}
+header {
+  background-color: #F4F4ED;
+  text-align: center;
+  padding: 10px 0;
 }
