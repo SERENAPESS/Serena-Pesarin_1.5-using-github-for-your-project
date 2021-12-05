@@ -19,12 +19,15 @@ Font Color (Black Olive) : #3E3C3C
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
     body {
         background-color: #ffffff;
         font-family: 'Montserrat', sans-serif;
         font-size: 16px; 
         font-weight: 300; 
-        line-height: 1.6; 
+        line-height: 1.4; 
         color: #3E3C3C;
       }
       h1, 
@@ -115,7 +118,7 @@ position: fixed;
 .container {
   padding: 0 15px;
 }
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+#work .row { padding-bottom: 15px; border-bottom: 1px solid #4a4a4a;
  }
 #hero h1 {
   text-align: center; /* Centers text */
