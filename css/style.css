@@ -97,12 +97,17 @@ body {
 }
 
 .button.contact {
-    background-color: transparent;
-    color: #f66C26;
+  display: inline-block; 
+    background-color: #F66C26;
+    color: #ffffff; 
+    font-weight: 300;
     padding: 10px;
-    text-transform: uppercase;
-    border: 2px solid #f66C26;
+    border-radius: 1px;
+    border-bottom: 1px solid #F66C26;
+    ; 
+    transition: 0.2s opacity;
   }
+   
 
   .button.contact:hover {
     background-color: #f66C26;
