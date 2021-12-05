@@ -130,3 +130,27 @@ header {
   padding: 10px 0;
 }
 
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+#hero {
+  background-color: #ffe4c4;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+
+
