@@ -142,9 +142,6 @@ nav > ul > li > a {
   font-weight: 300;
   color: #3E3C3C;
 }
-.navtoggle li:not(:last-child) {
-  display: none;
-}
 .navtoggle,
 .navtoggle.responsive {
   position: relative;
@@ -156,9 +153,6 @@ nav > ul > li > a {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(134, 134, 134, 0.192);
-}
-.navtoggle.responsive li:last-child {
-  padding: 0 0 10px;
 }
 .navtoggle li .icon {
   position: absolute;
