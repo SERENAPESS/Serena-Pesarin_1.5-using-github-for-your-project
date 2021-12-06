@@ -25,7 +25,7 @@ html {
         background-color: #ffffff;
         font-family: 'Montserrat', sans-serif;
         font-size: 16px; 
-        font-weight: 300; 
+        font-weight: 200; 
         line-height: 1.4; 
         color: #3E3C3C;
       }
@@ -37,7 +37,7 @@ html {
       }
       h1 {
         font-size: 2.75em;
-        font-weight: 600;
+        font-weight: 800;
       }
       
       h2 {
@@ -47,7 +47,7 @@ html {
       
       h3 {
         font-size: 1.75em;
-        font-weight: 600;
+        font-weight: 400;
       }
       h4 {
         font-size: 1.35em;
@@ -170,8 +170,8 @@ nav > ul > li > a {
   width: 100%;
 }
 #hero h1 {
-  text-align: left;
-  margin: 0;
+  text-align: center;
+  margin: 15px 0;
 }
 #hero h2 {
   text-align: left;
@@ -180,7 +180,12 @@ nav > ul > li > a {
 #hero h3 {
   text-align: center;
   margin: 15px 0;
-} 
+}  
+ h4 {
+  text-align: center;
+  margin: 15px 0;
+}
+
 #hero p {
   text-align: left;
 }
@@ -202,5 +207,5 @@ footer p {
   text-align: center;
 }
 main {
-  padding-top: 133px;
+  padding-top: 160px;
 }
