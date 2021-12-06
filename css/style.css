@@ -10,11 +10,10 @@ Font Color (Black Olive) : #3E3C3C
 
 /*
 Typography used:
-Primary Color (Isabelline.): #F4F4ED;
-Secondary Color (Anti-Flash White): #F2F2F2;
-Terziary Color (Bright Gray): #ECECEC;
-Button Color (Vivid Tangelo): #F66C26
-Font Color (Black Olive) : #3E3C3C
+Montserrat 200 extra light
+400 regular
+600 semi bold
+800 extra bold
 */
 * {
   box-sizing: border-box;
@@ -113,7 +112,8 @@ position: fixed;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
   -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
   box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
-  padding: 10px 0 0;
+  text-align: center;
+  padding: 10px 0;
 }
 .container {
   padding: 0 15px;
@@ -123,6 +123,10 @@ position: fixed;
 #hero h1 {
   text-align: center; /* Centers text */
 }
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+}
 .logo {
   max-width: 250px;
 }
@@ -130,19 +134,13 @@ nav > ul {
   list-style-type: none;
   padding: 0;
 }
-nav {
+nav > ul > li {
   display: inline-block;
-  width: 100%;
-}
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 nav > ul > li > a {
-  padding: 0 10px;
-  text-transform: lowercase;
-  font-weight: 300;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 600;
   color: #3E3C3C;
 }
 .navtoggle,
@@ -153,7 +151,7 @@ nav > ul > li > a {
   padding: 24px 0 0;
 }
 .navtoggle.responsive li {
-  display: block;
+  display: inline-block;
   padding: 10px 0;
   border-top: 1px solid rgba(134, 134, 134, 0.192);
 }
@@ -202,4 +200,7 @@ footer p {
 }
 .centerMe {
   text-align: center;
+}
+main {
+  padding-top: 133px;
 }
