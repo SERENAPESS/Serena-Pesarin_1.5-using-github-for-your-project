@@ -288,12 +288,11 @@ header {
 .button:hover {
   opacity: 0.8;
   text-decoration: none;
-}
+
 width: 100%;
 max-width: 100%;
 height: auto;
 }
 @keyframes color-change {
   from {fill: #edc655;}
-  to {fill: #f76414;}
-}
+  to {fill: #f76414;
