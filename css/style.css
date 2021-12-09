@@ -271,3 +271,17 @@ X-large devices (1440px or larger)
 header {
   text-align: unset;
 }
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 0,5px solid #994c30;
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8;
+}
