@@ -278,10 +278,15 @@ header {
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
-  border-radius: 3px;
-  border-bottom: 0,5px solid #994c30;
+  border-radius: 0px;
+  border-bottom: 0,5px solid;
   transition: 0.2s opacity;
 }
+.button:visited {
+  color: white;
+}
+
 .button:hover {
   opacity: 0.8;
+  text-decoration: none;
 }
