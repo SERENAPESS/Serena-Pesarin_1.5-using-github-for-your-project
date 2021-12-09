@@ -279,7 +279,7 @@ header {
   text-decoration: none;
   padding: 10px;
   border-radius: 0px;
-  border-bottom: 0,5px solid;
+  border-bottom: 1px solid #F66C26;
   transition: 0.2s opacity;
 }
 .button:visited {
