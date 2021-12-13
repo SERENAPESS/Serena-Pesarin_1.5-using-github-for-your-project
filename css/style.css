@@ -295,3 +295,6 @@ height: auto;
 @keyframes color-change {
   from {fill: #edc655;}
   to {fill: #f76414;
+
+display: flex
+justify-content= center
