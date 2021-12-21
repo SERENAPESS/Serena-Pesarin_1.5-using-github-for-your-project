@@ -1,12 +1,3 @@
-/*
-Colors used:
-Primary Color (Isabelline.): #F4F4ED;
-Secondary Color (Anti-Flash White): #F2F2F2;
-Terziary Color (Bright Gray): #ECECEC;
-Hints (Spanish Gray) : #979797
-Button Color (Vivid Tangelo): #F66C26
-Font Color (Black Olive) : #3E3C3C
-*/
 
 /*
 Typography used:
@@ -18,17 +9,103 @@ Montserrat 200 extra light
 * {
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
+body {
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16PX; 
+  font-weight: 200; 
+  line-height: 1.4; 
+  color: #3E3C3C;
 }
-    body {
-        background-color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16PX; 
-        font-weight: 200; 
-        line-height: 1.4; 
-        color: #3E3C3C;
-      }
+/*
+Colors used:
+Primary Color (Isabelline.): #F4F4ED;
+Secondary Color (Anti-Flash White): #F2F2F2;
+Terziary Color (Bright Gray): #ECECEC;
+Hints (Spanish Gray) : #979797
+Button Color (Vivid Tangelo): #F66C26
+Font Color (Black Olive) : #3E3C3C
+*/
+header {
+    background-color: #F2F2F2;
+    text-align: center;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+    box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    width: 100%;
+    display: inline-block;
+  }
+  main {
+    padding-top: 90px;
+  }
+  nav {
+    display: inline-block;
+    width: 100%;
+  }
+  
+  nav>ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav>ul>li {
+    display: inline-block;
+  }
+  
+  nav>ul>li>a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    color: rgba(241,156,121);
+  }
+  
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+  
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+/* our hamburger menu */
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+nav>ul>li>a:hover {
+  color: rgba(241,156,121);
+  text-decoration: underline;
+}
+
+nav>ul>li>a:focus {
+  color: rgba(241,156,121);
+  text-decoration: underline;
+}
+
+nav>ul>li>a:active {
+  color: rgba(76, 5, 20)
+}
+/* Typography */
       h1, 
       h2,
       h3, 
@@ -53,10 +130,14 @@ html {
         font-size: 1.35em;
         font-weight: 200;
       }
-/*images*/
-img {
-  width: 100%;
-}
+      /* Logo & IMG */
+      #logo {
+        max-width: 100px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }   
 /*links*/
       a {
         color: #3E3C3C;
@@ -104,21 +185,24 @@ img {
     color: #ffffff;
   }
 /* Layout styling */
-header {
-position: fixed;
-  width: 100%;
-  background-color: #F2F2F2;
-  -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
-  -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
-  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
-  text-align: center;
-  padding: 1px 0;
-}
 .container {
-  padding: 0 40px;
+  padding: 0 15px;
 }
-#work .row { padding-bottom: 15px; border-bottom: 1px solid #4a4a4a;
+.row {
+  margin: 25px 0;
+  border-bottom: 4px
+}
+#work .row { padding-bottom: 8px; border-bottom: 1px solid #4a4a4a;
  }
+
+#work h2 {
+  text-align: center;
+  font-size: 2.5em;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+/* ---------------------------- HOMEPAGE ---------------------------- */
+/* -------------------------------------------------------------------------- */
 #hero h1 {
   text-align: center; /* Centers text */
 }
@@ -129,50 +213,6 @@ position: fixed;
 .logo {
   max-width: 150px;
 
-}
-nav {
-  display: inline-block;
-  width: 100%;
-}
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-nav > ul {
-  margin: 1em 0;
-}
-
-nav > ul > li {
-  display: inline-block;
-  list-style-type: none;
-  padding: 0;
-}
-nav > ul > li > a {
-  display: inline-block;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  font-weight: 200;
-  color: #3E3C3C;
-}
-.navtoggle,
-.navtoggle.responsive {
-  position: relative;
-}
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-.navtoggle.responsive li {
-  display: inline-block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(134, 134, 134, 0.192);
-}
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 25px;
-  font-size: 20px;
-  padding-right: 0;
-}
 /* hero styling*/
 #hero {
   background-color: #F4F4ED;
@@ -216,9 +256,6 @@ footer p {
 }
 .centerMe {
   text-align: center;
-}
-main {
-  padding-top: 56px;
 }
 /* ==============================
 Medium devices (640px and larger)
@@ -346,7 +383,7 @@ header {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 footer {
-  background-color: #ffffff;
+  background-color: #fffff;
   text-align: center;
   padding: 10px 0;
   width: 100%;
@@ -360,4 +397,48 @@ footer {
 .social>ul>li {
   display: inline-block;
   padding: 20px 8px;
+}
+}
+nav {
+  display: inline-block;
+  width: 100%;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul {
+  margin: 1em 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li > a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #3E3C3C;
+}
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li {
+  display: inline-block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(134, 134, 134, 0.192);
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  font-size: 20px;
+  padding-right: 0;
 }
