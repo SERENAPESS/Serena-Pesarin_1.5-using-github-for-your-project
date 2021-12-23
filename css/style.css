@@ -146,77 +146,42 @@ header {
     text-align: center;
     padding: 10px 0 4px;
   }
-  nav>ul {
+
+  nav > ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 1em 0;
   }
+    .navtoggle li:not(:last-child) {
+      display: none;;
+    }
   
-  nav>ul>li>a {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #111111
-  }
-  
-  nav>ul>li>a:visited {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #b852f7
-  }
-  
-  nav>ul>li>a:hover {
-    padding: 0 15px;
-    text-transform: uppercase;
-    background-color: #7E49F6;
-    color: #ffffff;
-    font-weight: 700;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #54E9D1;
-    transition: 0.2s opacity;
-  }
-  
-  nav>ul>li>a:active {
-    padding: 0 15px;
-    text-transform: uppercase;
-    background-color: #54E9D1;
-    color: #7E49F6;
-    font-weight: 700;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #7E49F6;
-    transition: 0.2s opacity;
-  }
-  
-  .navtoggle li:not(:last-child) {
-    display: none;
-    padding: 0 0 10px;
-  }
-  
-  .navtoggle, .navtoggle.responsive {
-    position: relative;
-  }
-  
-  .navtoggle.responsive nav {
-    padding: 24px 0 0;
-  }
-  
-  .navtoggle li .icon {
-    position: absolute;
-    right: 0;
-    top: 2px;
-    font-size: 30px;
-    padding-right: 0, 0;
-  }
-  
-  .navtoggle.responsive li  {
-    display: block;
-    padding: 10px 0;
-    border-top: 1px solid #54E9D1;
-  }
-  
+    .navtoggle, .navtoggle.responsive {
+      position: relative;
+    }
+    
+    .navtoggle li .icon {
+      position: absolute;
+      right: 0;
+      top: 2px;
+      font-size: 20px;
+      padding-right: 0;
+    }
+    .navtoggle.responsive li  {
+      display: block;
+    } 
+    .navtoggle.responsive nav {
+      padding: 24px 0 0;
+    }
+    .navtoggle.responsive li  {
+      display: block;
+      padding: 10px 0;
+      border-top: 1px solid rgba(255,127,80,0.5);
+    }
+    
+    .navtoggle.responsive li:last-child  {
+      padding: 0 0 10px;
+    }
 /* hero styling*/
 #hero {
   background-color: #F4F4ED;
@@ -226,7 +191,7 @@ header {
 
 }
 main {
-  padding-top: 68px;
+  padding-top: 56px;
 }
 
 /* footer styling */
