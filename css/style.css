@@ -105,7 +105,7 @@ img {
   }
 /* Layout styling */
 .container {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 #work .row { padding-bottom: 15px; border-bottom: 1px solid #4a4a4a;
  }
@@ -121,12 +121,16 @@ img {
 #hero h1 {
   text-align: center; 
   margin: 0;
-  padding: 0.40em 0;
+  padding: 0.60em 0;
 }
 #hero {
   background-color: #ffe4c4;
   padding: 20px 0;
 }
+#hero span {
+  display: block;
+}
+
 .logo {
   max-width: 150px;
 }
@@ -209,8 +213,21 @@ nav > ul > li > a {
 #hero p {
   text-align: left;
 }
-
+main {
+  padding-top: 90px;
+}
 /* footer styling */
+  #contact {
+    background-color: #ffffff;
+    text-align: center;
+    color: #111111;
+    padding: 0.67em;
+  }
+  
+  text-align: center;
+  color: #ffffff;
+  padding: 0.67em;
+}
 #contact h2 {
   text-align: center;
 }
@@ -226,9 +243,7 @@ footer p {
 .centerMe {
   text-align: center;
 }
-main {
-  padding-top: 88px;
-}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
