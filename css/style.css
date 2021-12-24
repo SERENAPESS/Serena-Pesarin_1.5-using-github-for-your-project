@@ -192,14 +192,18 @@ nav > ul {
   width: 100%;
 }
 main {
-  padding-top: 56px;
+  padding-top: 70px;
 }
 
 .row .image #about-picture {
   min-width: 100px;
   min-height: 100px;
 }
-
+#about-picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 /* footer styling */
 #contact {
   background-color: #ffffff;
@@ -215,23 +219,25 @@ main {
 footer p {
   margin-bottom: 10px;
 }
+
 .centerMe {
   text-align: center;
 }
 /* css animation */
 @keyframes color-change {
   0% {
-    fill: #edc655;
+      fill: #edc655;
   }
 
   50% {
-    fill: #fcffad;
+      fill: #fcffad;
   }
 
   100% {
-    fill: #f76414;
+      fill: #f76414;
   }
 }
+
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
@@ -239,15 +245,17 @@ footer p {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move {
   from {
-    transform: translate(0, 50px);
+      transform: translate(0, 50px);
   }
 
   to {
-    transform: translate(200px, 50px);
+      transform: translate(200px, 50px);
   }
 }
+
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -255,19 +263,20 @@ footer p {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move-reverse {
   from {
-    transform: translate(446px, 48px);
+      transform: translate(446px, 48px);
   }
 
   to {
-    transform: translate(100px, 48px);
+      transform: translate(100px, 48px);
   }
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -279,7 +288,7 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 10px;
+    margin-top: 4px;
   }
   nav > ul {
     margin: 1em 0;
