@@ -364,10 +364,10 @@ Large devices (1024px or larger)
         margin-right: auto;
     }
     .col-md-7 {
-        width: 60%;
+        width: 50%;
     }
     .col-md-5 {
-        width: 40%;
+        width: 50%;
     }
 }
 
@@ -383,15 +383,16 @@ header {
 }
 
 .button {
-    display: inline-block;
-    background-color: #ff7f50;
-    color: white;
-    font-weight: 400;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 0px;
-    border-bottom: 1px solid #f66c26;
-    transition: 0.2s opacity;
+    .button {
+        display: inline-block;
+        background-color: #f66c26;
+        color: #ffffff;
+        font-weight: 600;
+        padding: 10px;
+        border-radius: 1px;
+        border-bottom: 1px solid #f66c26;
+        transition: 0.2s opacity;
+    }
 }
 
 .button:visited {
