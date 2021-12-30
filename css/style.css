@@ -246,6 +246,15 @@ footer p {
   margin-bottom: 30px;
 }
 
+#socials {
+  list-style: none;
+  padding: 0;
+}
+
+#socials li {
+  display: inline-block;
+}
+
 .centerMe {
   text-align: center;
 }
