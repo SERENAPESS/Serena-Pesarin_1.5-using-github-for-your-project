@@ -14,7 +14,9 @@ Montserrat 200 extra light
 600 semi bold
 800 extra bold
 */
-
+/* =================================================
+GENERAL STYLING
+================================================= */
 * {
   box-sizing: border-box;
 }
@@ -32,18 +34,37 @@ body {
   color: #3e3c3c;
 }
 
+header {
+  position: fixed;
+  display: inline;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
+  padding: 10px 0 4px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
+
 h1 {
-  font-size: 2.75em;
+  font-size: 1.87em;
   font-weight: 800;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 1.65em;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.45em;
   font-weight: 400;
 }
 
@@ -51,13 +72,25 @@ h4 {
   font-size: 1.35em;
   font-weight: 200;
 }
-/*images*/
-
+/* =================================================
+IMAGE STYLING
+================================================= */
 img {
   width: 100%;
 }
-/*links*/
 
+.logo {
+  max-width: 200px;
+}
+
+.about.me img {
+  max-width: 2400px;
+  padding: 15px;
+}
+
+/* =================================================
+LINK STYLING
+================================================= */
 a {
   color: #3e3c3c;
   text-decoration: none;
@@ -65,9 +98,12 @@ a {
   /* No underlining */
 }
 
+a:visited {
+  color: #363636;
+}
+
 a:hover {
   color: #f66c26;
-  text-decoration: underline;
   padding: 10px;
   /* Underlining when hovering over a link */
 }
@@ -76,53 +112,63 @@ a:active {
   color: #f66c26;
   padding: 10px;
 }
-/*buttons*/
 
+/* =================================================
+BUTTON STYLING
+================================================= */
 .button {
   display: inline-block;
   background-color: #f66c26;
+  text-decoration: none;
   color: #ffffff;
   font-weight: 600;
-  padding: 10px;
-  border-radius: 1px;
-  border-bottom: 1px solid #f66c26;
+  padding: 10px 20px;;
+  border-radius: 2px;
+  border-bottom: 2px solid #f66c26;
   transition: 0.2s opacity;
 }
 
 .button:hover,
-.button.readmore:focus {
   opacity: 0.8;
   text-decoration: none;
 }
 
-.button:active {
-  color: #f66c26;
-}
-
 .button.contact {
-  display: inline-block;
   background-color: #f66c26;
   color: #ffffff;
-  font-weight: 600;
-  padding: 10px;
-  border-radius: 1px;
-  border-bottom: 1px solid #f66c26;
-  transition: 0.2s opacity;
+  text-transform: uppercase;
+  border: none;
+  display: inline;
+  width: 150px;
+  margin: 10px;
 }
 
 .button.contact:hover {
   background-color: #f66c26;
   color: #ffffff;
 }
-/* Layout styling */
-
+/* =================================================
+LAYOUT STYLING
+================================================= */
 .container {
   padding: 0 px;
+  margin: 0 auto;
 }
 
 #work .row {
   padding-bottom: 10px;
   border-bottom: 1px solid #4a4a4a;
+}
+
+.row {
+  margin: 25px 0;
+  vertical-align: middle;
+}
+
+.section {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  vertical-align: middle;
 }
 
 .row::after {
@@ -131,43 +177,6 @@ a:active {
   display: table;
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-.col {
-  width: 100%;
-}
-
-#hero {
-  background-color: #ffe4c4;
-  padding: 30px 0;
-}
-
-#hero h1 {
-  text-align: center;
-  margin: 0;
-  padding: 0.6em 0;
-}
-
-#hero span {
-  display: block;
-}
-
-.logo {
-  max-width: 200px;
-}
-
-header {
-  position: fixed;
-  width: 100%;
-  background-color: #f2f2f2;
-  -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
-  -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
-  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.42);
-  padding: 10px 0 4px;
-}
 
 nav > ul {
   list-style-type: none;
@@ -209,6 +218,31 @@ nav > ul {
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col {
+  width: 100%;
+}
+
+#hero {
+  background-color: #ffe4c4;
+  padding: 30px 0;
+}
+
+#hero h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0.6em 0;
+}
+
+#hero span {
+  display: block;
+}
+
 /* hero styling*/
 
 #hero {
@@ -227,11 +261,6 @@ main {
   min-height: 100px;
 }
 
-#about-picture {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
 /* footer styling */
 
 #contact {
@@ -385,28 +414,4 @@ header {
   transition: 0.2s opacity;
 }
 
-.button:hover,
-.button.readmore:focus {
-  opacity: 0.8;
-  text-decoration: none;
-}
 
-.button:active {
-  color: #f66c26;
-}
-
-.button.contact {
-  display: inline-block;
-  background-color: #f66c26;
-  color: #ffffff;
-  font-weight: 600;
-  padding: 10px;
-  border-radius: 1px;
-  border-bottom: 1px solid #f66c26;
-  transition: 0.2s opacity;
-}
-
-.button.contact:hover {
-  background-color: #f66c26;
-  color: #ffffff;
-}
