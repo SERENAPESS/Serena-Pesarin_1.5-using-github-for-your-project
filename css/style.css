@@ -155,11 +155,6 @@ LAYOUT STYLING
   margin: 0 auto;
 }
 
-#work .row {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #4a4a4a;
-}
-
 .row {
   margin: 25px 0;
   vertical-align: middle;
@@ -218,15 +213,6 @@ nav > ul {
   padding: 0 0 10px;
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-.col {
-  width: 100%;
-}
-
 #hero {
   background-color: #f4f4ed;
   padding: 20px 0;
@@ -246,24 +232,56 @@ nav > ul {
 }
 
 main {
-  padding-top: 75px;
+  padding-top: 90px;
 }
 
-/* footer styling */
+#work .row {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#work {
+  background-color: #f3f1f0;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.col-sm-12 {
+  width: 100%;
+}
+
+/* =================================================
+FOOTER STYLING
+================================================= */
 #footer {
   background-color: #ECECEC;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
 }
 
-#contact {
-  background-color: #ffffff;
-  text-align: center;
-  color: #111111;
-  padding: 1em;
+#contact ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-#copyright {
+#contact ul > li {
+  display: inline;
   text-align: center;
-  font-size: 12px;
+}
+
+.button.contact {
+  display: inline-block;
+}
+
+#contact .container {
+  display: inline;
+  text-align: center;
 }
 
 footer p {
@@ -279,11 +297,62 @@ footer p {
   display: inline-block;
 }
 
-.centerMe {
+/* =================================================
+ABOUT
+================================================= */
+#about-hero {
+  background-color: #f3f1f0;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
   text-align: center;
 }
-/* css animation */
 
+#about-hero .container {
+  text-align: center;
+}
+
+#about-page .vertical-top {
+  flex-direction: row;
+}
+
+/* =================================================
+CHIDO
+================================================= */
+#chido-hero {
+  background-color: #f3f1f0;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+#chido-hero span {
+  display: block;
+}
+
+#chido-role .row {
+  background-color: #b9e49b;
+  padding: 20px;
+  vertical-align: middle;
+}
+
+#chido-role h3 {
+  margin: 0;
+}
+
+#retrospective .row {
+  background-color: #b9e49b;
+  padding: 20px;
+}
+
+#chido-page [class="col-sm-"] {
+  float: left;
+  padding: 0;
+}
+
+/* ==============================
+CSS ANIMATION
+============================== */
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -333,6 +402,7 @@ footer p {
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -342,6 +412,7 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+
   nav {
     width: auto;
     float: right;
@@ -376,6 +447,7 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+
   .col-md-7 {
     width: 50%;
   }
@@ -383,6 +455,10 @@ Large devices (1024px or larger)
     width: 50%;
   }
 }
+
+
+
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
