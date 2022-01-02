@@ -234,7 +234,6 @@ nav > ul {
   width: 100%;
   text-align: center;
 }
-}
 
 #hero h1 {
   text-align: center;
@@ -250,12 +249,10 @@ main {
   padding-top: 75px;
 }
 
-.row .image #about-picture {
-  min-width: 100px;
-  min-height: 100px;
-}
-
 /* footer styling */
+#footer {
+  background-color: #ECECEC;
+}
 
 #contact {
   background-color: #ffffff;
