@@ -32,13 +32,12 @@ body {
 
 header {
   position: fixed;
-  display: inline;
   width: 100%;
   vertical-align: middle;
   background-color: #f2f2f2;
-  -webkit-box-shadow: 1px 2px 0px rgba(155, 155, 155, 0.42);
-  -moz-box-shadow: 1px 2px 0px rgba(155, 155, 155, 0.42);
-  box-shadow: 1px 2px 0px rgba(155, 155, 155, 0.42);
+  -webkit-box-shadow: 1px 1px 0px rgba(155, 155, 155, 0.42);
+  -moz-box-shadow: 1px 1px 0px rgba(155, 155, 155, 0.42);
+  box-shadow: 1px 1px 0px rgba(155, 155, 155, 0.42);
   padding: 10px 0 4px;
 }
 
@@ -117,8 +116,9 @@ BUTTON STYLING
   transition: 0.2s opacity;
 }
 
-.button:hover,
-transition: 0.8s opacity;
+.button:hover {
+opacity: 0.8;
+text-decoration: none;
 }
 
 .button.contact {
@@ -405,9 +405,9 @@ Medium devices (640px and larger)
 ================================= */
 
 @media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
+  /* LAYOUT & SPACING */
+  .container {
+    margin: 0 1.5em;
   }
 
   nav {
@@ -438,23 +438,20 @@ Medium devices (640px and larger)
 
   .col-md-7 {
     width: 58.33%;
-    float: inline-end
+    float: left;
   }
 
-  #about-page h3 {
-    margin-top: 0;
-  }
-}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-
+}
 @media only screen and (min-width: 1024px) {
   .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
   }
+
 
   .col-md-5 {
     width: 41.66%;
@@ -468,27 +465,4 @@ Large devices (1024px or larger)
   .col-md-7 {
     width: 58.33%;
   }
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-
-@media only screen and (min-width: 1440px) {
 }
-
-header {
-  text-align: unset;
-}
-
-.button {
-  display: inline-block;
-  background-color: #f66c26;
-  color: #ffffff;
-  font-weight: 600;
-  padding: 10px;
-  border-radius: 1px;
-  border-bottom: 1px solid #f66c26;
-  transition: 0.2s opacity;
-}
-
-
