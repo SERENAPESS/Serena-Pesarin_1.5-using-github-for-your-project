@@ -143,7 +143,8 @@ svg {
 LAYOUT STYLING
 ================================================= */
 .container {
-  padding: 0 20px;
+  margin: 15px 0;
+  padding: 0 10px;
 }
 
 .row {
@@ -165,7 +166,7 @@ LAYOUT STYLING
 
 .section {
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   vertical-align: middle;
 }
 .row {
