@@ -122,17 +122,16 @@ text-decoration: none;
 }
 
 .button.contact {
-  background-color: #eb6320;
+  background-color: #111111;
   color: #ffffff;
-  text-transform: uppercase;
+  text-transform: none;
   border: none;
   display: inline;
-  width: 150px;
   margin: 10px;
 }
 
 .button.contact:hover {
-  background-color: #f66c26;
+  background-color: #424242;
   color: #ffffff;
 }
 
@@ -165,7 +164,7 @@ LAYOUT STYLING
 }
 
 .section {
-  margin-top: 70px;
+  margin-top: 50px;
   margin-bottom: 100px;
   vertical-align: middle;
 }
