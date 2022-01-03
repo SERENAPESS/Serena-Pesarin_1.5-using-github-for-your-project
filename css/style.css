@@ -169,6 +169,9 @@ LAYOUT STYLING
   margin-bottom: 100px;
   vertical-align: middle;
 }
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
 
 .row::after {
   content: "";
@@ -236,10 +239,6 @@ nav > ul {
   margin: auto;
 }
 
-#work .row {
-  padding-bottom: 0px;
-  border-bottom: 1px solid #4a4a4a;
-}
 
 [class*="col-"] {
   float: left;
@@ -332,72 +331,59 @@ ABOUT ME
 /* ==============================
 CSS ANIMATION
 ============================== */
-.cloud-back {
-  animation: 15s cloud-move-reverse infinite alternate linear;
-}
-
-.sun {
-  animation-duration: 2s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-
-
-#Smiley {
-  animation: moveSmiley;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-timing-function: ease-in;
-}
-
-@keyframes moveSmiley {
-  to {
-    transform: translateY(90px);
-  }
-}
 
 @keyframes color-change {
   0% {
-    fill: #E496A0;
+      fill: #edc655;
   }
 
   50% {
-    fill: #D16243;
+      fill: #fcffad;
   }
 
   100% {
-    fill: #A44A3F;
+      fill: #f76414;
   }
 }
 
-#screen {
+.sun {
   animation-duration: 4s;
   animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-direction: alternate-reverse;
-}
-
-#Cloud {
-  animation-duration: 5s;
-  animation-name: Cloud-move;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
 
-@keyframes Cloud-move {
+@keyframes cloud-move {
   from {
-    transform: translate(0, 50px);
+      transform: translate(0, 50px);
   }
 
   to {
-    transform: translate(200px, 50px);
+      transform: translate(200px, 50px);
   }
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+      transform: translate(446px, 48px);
+  }
+
+  to {
+      transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* ==============================
