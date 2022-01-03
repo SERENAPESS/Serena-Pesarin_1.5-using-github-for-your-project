@@ -76,7 +76,7 @@ img {
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 180px;
 }
 
 .about.me img {
@@ -152,11 +152,11 @@ svg {
 LAYOUT STYLING
 ================================================= */
 .container {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 .row {
-  margin: 25px 0;
+  margin: 15px 0;
   border-bottom: 4px
 }
 
@@ -172,7 +172,7 @@ LAYOUT STYLING
 }
 
 .section {
-  margin-top: 40px;
+  margin-top: 70px;
   margin-bottom: 100px;
   vertical-align: middle;
 }
@@ -243,15 +243,10 @@ nav > ul {
   margin: auto;
 }
 
-main {
-  padding-top: 56px;
-}
-
 #work .row {
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   border-bottom: 1px solid #4a4a4a;
 }
-
 
 [class*="col-"] {
   float: left;
@@ -263,8 +258,8 @@ main {
 }
 
 [class*="col-"] {
-  float: left;
-  padding: 10px;
+  float: none;
+  padding: 20px;
 }
 /* =================================================
 FOOTER STYLING
