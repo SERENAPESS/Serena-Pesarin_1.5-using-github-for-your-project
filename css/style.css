@@ -99,13 +99,13 @@ a:visited {
 }
 
 a:hover {
-  color: #f66c26;
+  color: #eb6320;
   padding: 10px;
   /* Underlining when hovering over a link */
 }
 
 a:active {
-  color: #f66c26;
+  color: #eb6320;
   padding: 10px;
 }
 
@@ -114,13 +114,13 @@ BUTTON STYLING
 ================================================= */
 .button {
   display: inline-block;
-  background-color: #f66c26;
+  background-color: #eb6320;
   text-decoration: none;
-  color: white !important; 
+  color: rgb(255, 255, 255) !important; 
   font-weight: 600;
   padding: 10px 20px;;
   border-radius: 2px;
-  border-bottom: 2px solid #f66c26;
+  border-bottom: 2px solid #eb6320;
   transition: 0.2s opacity;
 }
 
@@ -130,7 +130,7 @@ BUTTON STYLING
 }
 
 .button.contact {
-  background-color: #f66c26;
+  background-color: #eb6320;
   color: #ffffff;
   text-transform: uppercase;
   border: none;
@@ -218,7 +218,7 @@ nav > ul {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(238, 84, 32, 0.5);
+  border-top: 1px solid rgba(238, 83, 32, 0.911);
 }
 
 .navtoggle.responsive li:last-child {
