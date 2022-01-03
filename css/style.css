@@ -162,6 +162,7 @@ LAYOUT STYLING
 
 #work .row {
   padding-bottom: 8px;
+  text-align: center;
 }
 
 #work h2 {
@@ -440,11 +441,12 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
-    float: left;
+    float: inline-start;
   }
 
   .col-md-7 {
     width: 58.33%;
+    float: inline-end
   }
 
   #about-page h3 {
