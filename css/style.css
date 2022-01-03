@@ -217,7 +217,7 @@ nav > ul {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
+  border-top: 1px solid rgba(238, 84, 32, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
@@ -502,13 +502,18 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 
-  .col-md-7 {
-    width: 50%;
-  }
   .col-md-5 {
-    width: 50%;
+    width: 41.66%;
   }
-}
+
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
 
 /* ==============================
 X-large devices (1440px or larger)
