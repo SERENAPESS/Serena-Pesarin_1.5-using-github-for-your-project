@@ -120,7 +120,7 @@ BUTTON STYLING
   display: inline-block;
   background-color: #f66c26;
   text-decoration: none;
-  color: #ffffff;
+  color: white !important; 
   font-weight: 600;
   padding: 10px 20px;;
   border-radius: 2px;
@@ -147,21 +147,36 @@ BUTTON STYLING
   background-color: #f66c26;
   color: #ffffff;
 }
+
+svg {
+  max-width: 32px;
+}
+
 /* =================================================
 LAYOUT STYLING
 ================================================= */
 .container {
-  padding: 0 px;
-  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .row {
   margin: 25px 0;
-  vertical-align: middle;
+  border-bottom: 4px
+}
+
+#work .row {
+  padding-bottom: 8px;
+}
+
+#work h2 {
+  text-align: center;
+  font-size: 2.5em;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 .section {
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 100px;
   vertical-align: middle;
 }
@@ -229,10 +244,11 @@ nav > ul {
 
 #hero span {
   display: block;
+  margin: auto;
 }
 
 main {
-  padding-top: 90px;
+  padding-top: 56px;
 }
 
 #work .row {
@@ -240,9 +256,6 @@ main {
   border-bottom: 1px solid #4a4a4a;
 }
 
-#work {
-  background-color: #f3f1f0;
-}
 
 [class*="col-"] {
   float: left;
@@ -253,6 +266,10 @@ main {
   width: 100%;
 }
 
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
 /* =================================================
 FOOTER STYLING
 ================================================= */
@@ -300,7 +317,7 @@ footer p {
 /* =================================================
 ABOUT
 ================================================= */
-#about-hero {
+#aboutme {
   background-color: #f3f1f0;
   padding: 20px;
   display: inline-block;
@@ -308,13 +325,26 @@ ABOUT
   text-align: center;
 }
 
-#about-hero .container {
+#aboutme {
+  padding-top: 130px;
+}
+
+#aboutme h1 {
   text-align: center;
 }
 
-#about-page .vertical-top {
-  flex-direction: row;
+#aboutme h2 {
+  text-align: center;
 }
+
+#aboutimage {
+  float: left;
+  margin: 0 12px 12px 0;
+  max-width: 300px;
+  border-radius: 10px;
+  border: 3px solid rgba(164, 74, 63);
+}
+
 
 /* =================================================
 CHIDO
@@ -355,13 +385,15 @@ CSS ANIMATION
 ============================== */
 @keyframes color-change {
   0% {
-    fill: #edc655;
+      fill: #edc655;
   }
+
   50% {
-    fill: #fcffad;
+      fill: #fcffad;
   }
+
   100% {
-    fill: #f76414;
+      fill: #f76414;
   }
 }
 
@@ -375,10 +407,11 @@ CSS ANIMATION
 
 @keyframes cloud-move {
   from {
-    transform: translate(0, 50px);
+      transform: translate(0, 50px);
   }
+
   to {
-    transform: translate(200px, 50px);
+      transform: translate(200px, 50px);
   }
 }
 
@@ -392,10 +425,11 @@ CSS ANIMATION
 
 @keyframes cloud-move-reverse {
   from {
-    transform: translate(446px, 48px);
+      transform: translate(446px, 48px);
   }
+
   to {
-    transform: translate(100px, 48px);
+      transform: translate(100px, 48px);
   }
 }
 
@@ -455,9 +489,6 @@ Large devices (1024px or larger)
     width: 50%;
   }
 }
-
-
-
 
 /* ==============================
 X-large devices (1440px or larger)

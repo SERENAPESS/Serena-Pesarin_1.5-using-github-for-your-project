@@ -21,8 +21,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body id="about_me">
+<!--header-->
 <header>
-<div class="container">
+<div class="container borderXwidth">
 <div class="navtoggle" id="myNavtoggle">
 <a href="index.html"><img src="img/about_me_and_home_photo/artboard.png" alt="Logo" class="logo" /></a>
 <!--Navigation-->
@@ -30,19 +31,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 <ul>
 <li><a href="work.html">Work</a></li>
 <li><a href="about.html">About</a></li>
-<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
-class="fas fa-bars"></i></a></li>
+<li class="container borderXwidth"><a href="#contact">Contact</a></li>
+<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
 </ul>
 </nav>
 </div>
 </div>
 </header>
 <!--begining of hero section-->
-<main>
-<div id="hero">
-<div class="container"><h1>About</h1></div>
-<picture class="about me">
+<main id=aboutme>
+<div class="container">
+<h1>About</h1>
+<div class="row">
+<picture>
 <source srcset="img/aboutme_home_photos/aboutme_1200px.png" media="(max-width:767px)" />
 <img src="img/aboutme_home_photos/aboutme_2400px.png" alt="Image of Serena" />
 </picture>
@@ -61,17 +62,27 @@ growth.<br />
 <br />
 By having insights into human decision-making behaviours, I was able to find solutions that work around clients.
 </p>
+</div>
+</div>
+<br />
+<br />
 <!-- Download resume -->
+<div class="row-about-resume">
 <a href="files/resume.pdf" class="button">Download Resume</a>
 </div>
+<div>
 <!--End of My Story -->
 <!--Skills & Tools -->
 <div>
+    <br />
+    <br />
 <h2>Skills and Tools</h2>
-<div class="row" id="skills">
-<!--column 1-->
-<div class="col col-md-6 col-lg-2 hide-2">
-<h4>RELEVANT SKILLS </h4>
+</div>
+<div class="skills_tools">
+<div class="row">
+<!-- <div class="container"> -->
+<div class="column col-md-6 col-lg-6">
+<p>RELEVANT SKILLS </p>
 <ul>
 <li>User Research</li>
 <li>User Persona</li>
@@ -85,8 +96,8 @@ By having insights into human decision-making behaviours, I was able to find sol
 </ul>
 </div>
 <!--column 2-->
-<div class="col col-md-6 col-lg-2">
-<h4>TOOLS</h4>
+<div class="column col-md-6 col-lg-6">
+<p>TOOLS</p>
 <ul>
 <li>InDesign</li>
 <li>Sketch</li>
@@ -97,6 +108,8 @@ By having insights into human decision-making behaviours, I was able to find sol
 <li>Invision</li>
 <li>Photoshop</li>
 </ul>
+</div>
+</div>
 </div>
 </div>
 </div>
