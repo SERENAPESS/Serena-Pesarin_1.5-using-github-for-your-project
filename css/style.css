@@ -336,41 +336,6 @@ ABOUT ME
   text-align: center;
 }
 
-
-/* =================================================
-CHIDO
-================================================= */
-#chido-hero {
-  background-color: #f3f1f0;
-  padding: 20px;
-  display: inline-block;
-  width: 100%;
-}
-
-#chido-hero span {
-  display: block;
-}
-
-#chido-role .row {
-  background-color: #b9e49b;
-  padding: 20px;
-  vertical-align: middle;
-}
-
-#chido-role h3 {
-  margin: 0;
-}
-
-#retrospective .row {
-  background-color: #b9e49b;
-  padding: 20px;
-}
-
-#chido-page [class="col-sm-"] {
-  float: left;
-  padding: 0;
-}
-
 /* ==============================
 CSS ANIMATION
 ============================== */
