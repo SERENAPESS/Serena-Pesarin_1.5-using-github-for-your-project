@@ -143,18 +143,10 @@ svg {
 LAYOUT STYLING
 ================================================= */
 .container {
-  margin: 20px 0;
-  padding: 0 10px;
+  padding: 0 15px;
 }
-
 .row {
-  margin: 15px 0;
-  border-bottom: 4px
-}
-
-#work .row {
-  padding-bottom: 8px;
-  text-align: center;
+  margin: 25px 0; /*25px top and bottom, 0 left and right */
 }
 
 #work h2 {
@@ -168,9 +160,6 @@ LAYOUT STYLING
   margin-top: 50px;
   margin-bottom: 30px;
   vertical-align: middle;
-}
-.row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
 .row::after {
@@ -328,6 +317,10 @@ ABOUT ME
   text-align: center;
 }
 
+/* =================================================
+ABOUT ME
+================================================= */
+
 /* ==============================
 CSS ANIMATION
 ============================== */
@@ -413,18 +406,12 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
-  .col-md-5 {
-    width: 41.66%;
-  }
-
   .col-md-6 {
     width: 50%;
-    float: inline-start;
   }
-
-  .col-md-7 {
-    width: 58.33%;
+  [class*="col-"] {
     float: left;
+    padding-left: 10px;
   }
 
 /* ==============================
@@ -432,23 +419,20 @@ Large devices (1024px or larger)
 ================================= */
 }
 @media only screen and (min-width: 1024px) {
-  .container {
-      max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-  }
-
-
-  .col-md-5 {
-    width: 41.66%;
-  }
-
-  .col-md-6 {
-    width: 50%;
-    float: left;
-  }
-
   .col-md-7 {
-    width: 58.33%;
+    width: 60%;
   }
+  .col-md-5 {
+    width: 40%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
