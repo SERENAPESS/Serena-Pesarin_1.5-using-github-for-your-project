@@ -22,7 +22,7 @@ GENERAL STYLING
 }
 
 body {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 200;
@@ -34,7 +34,7 @@ header {
   position: fixed;
   width: 100%;
   vertical-align: middle;
-  background-color: #F4F4ED;
+  background-color: #f4f4ed;
   -webkit-box-shadow: 1px 0px 0px rgba(155, 155, 155, 0.42);
   -moz-box-shadow: 1px 0px 0px rgba(155, 155, 155, 0.42);
   box-shadow: 1px 0px 0px rgba(155, 155, 155, 0.42);
@@ -114,17 +114,17 @@ BUTTON STYLING
   display: inline-block;
   background-color: #eb6320;
   text-decoration: none;
-  color: rgb(255, 255, 255) !important; 
+  color: rgb(255, 255, 255) !important;
   font-weight: 600;
-  padding: 10px 20px;;
+  padding: 10px 20px;
   border-radius: 2px;
   border-bottom: 2px solid #eb6320;
   transition: 0.2s opacity;
 }
 
 .button:hover {
-opacity: 0.8;
-text-decoration: none;
+  opacity: 0.8;
+  text-decoration: none;
 }
 
 .button.contact {
@@ -234,7 +234,6 @@ nav > ul {
   margin: auto;
 }
 
-
 [class*="col-"] {
   float: left;
   padding: 10px;
@@ -251,8 +250,8 @@ nav > ul {
 /* =================================================
 FOOTER STYLING
 ================================================= */
-#footer {
-  background-color: #ECECEC;
+footer {
+  background-color: #ececec;
   padding: 10px;
   text-align: center;
   position: relative;
@@ -333,15 +332,15 @@ CSS ANIMATION
 
 @keyframes color-change {
   0% {
-      fill: #edc655;
+    fill: #edc655;
   }
 
   50% {
-      fill: #fcffad;
+    fill: #fcffad;
   }
 
   100% {
-      fill: #f76414;
+    fill: #f76414;
   }
 }
 
@@ -355,11 +354,11 @@ CSS ANIMATION
 
 @keyframes cloud-move {
   from {
-      transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
 
   to {
-      transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
@@ -373,11 +372,11 @@ CSS ANIMATION
 
 @keyframes cloud-move-reverse {
   from {
-      transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
 
   to {
-      transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
 
@@ -420,7 +419,7 @@ Medium devices (640px and larger)
     padding-left: 10px;
   }
 
-/* ==============================
+  /* ==============================
 Large devices (1024px or larger)
 ================================= */
 }
@@ -435,7 +434,7 @@ Large devices (1024px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 }
 /* ==============================
 X-large devices (1440px or larger)
